@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 $servername = "localhost";
 $username = "root";
@@ -58,14 +59,16 @@ mysqli_close($conn);
     <script src="assets/js/popper.min.js"></script>
   </head>
 <body>
-    <img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
-    <nav class="navbar" style="background-color: #669999;height: 20px;">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <p class="navbar-brand" style="font-size: 20px;font-family: Bradley Hand ITC;font-weight: bold;color: white;" href="#">Online Hospital Management System</p>
+   <body>
+     <img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
+      <nav class="navbar" style="background-color: #669999;height: 20px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <p class="navbar-brand" style="font-size: 20px;font-family: Bradley Hand ITC;font-weight: bold;color: white;" href="#">Online Hospital Management System</p>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+   </body>
   <div class="col-md-4 col-md-offset-4" style="margin-top: 3%;">
   <form class="p-5" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
     <img src="">
@@ -104,9 +107,16 @@ mysqli_close($conn);
   height: 30px;
   background-color: #669999;">
   <div class="container">
-    <p  style="font-weight: bold;right: 0;">Contact Us</p>
+    <p class="con">Contact Us</p>
   </div>
 </footer>
-
+<style type="text/css">
+body{
+  overflow-y: hidden;
+}
+  .con{
+    font-weight: bold;right: 0;position: absolute;right:100px;top:5px;
+  }
+</style>
 </body>
 </html>

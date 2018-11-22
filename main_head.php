@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <html>
-	<head>
+<head>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/mdb.css">
@@ -21,30 +22,27 @@
     <script src="assets/js/mdb.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
   </head>
-	<body>
-	<img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
+<body>
+<img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
       <nav class="navbar" style="background-color: #669999;height: 40px;">
       <div class="container-fluid">
         <div class="navbar-header">
-          <p class="navbar-brand" style="font-size: 20px;font-family:cursive;font-weight: bold;color: black;margin-left:140%;padding-top: 20px;"href="#">Online Hospital Management System</p>
+          <p class="navbar-brand" style="font-size: 20px;font-family: Bradley Hand ITC;font-weight: bold;color: white;padding-top: 20px;"href="#">Online Hospital Management System</p>
         </div>
-        <div><a class="logout"href="logout.php">Logout</a></div>
       </div>
     </nav>
+<footer class="footer" style="position: absolute;bottom: 0;width: 100%;height: 30px;background-color: #669999;">
+  <div class="container">
+    <p class="con">Contact Us</p>
+  </div>
+</footer>
 </body>
-<style>
-.logout{
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-.logout:hover{
-    color: white;
-}
-.title{
-	 display:block;
-	 margin:auto;
-	 height: 60px;
-}
+<style type="text/css">
+	body{
+	  overflow-y: hidden;
+	}
+  .con{
+    font-weight: bold;right: 0;position: absolute;right:100px;top:5px;
+  }
 </style>
- </html>
+</html>

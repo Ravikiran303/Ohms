@@ -1,6 +1,3 @@
-<?php
-include"header.php";
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +28,14 @@ include"header.php";
 	<title></title>
 </head>
 <body>
-<div class="profile"></div>
+  <?php include"header.php";?>
+<div class="profile">
+  <img src="assets/1.jpg">
+  <div class="details">
+  <p>B.Manohar Krishna</p>
+  <p>E-1 CSE</p>
+</div>
+</div>
 <div class="container-fluid table2">
   <div class="row">
     <div class="col-md-12">
@@ -40,20 +44,12 @@ include"header.php";
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 1</th>
-  			<th>Column 1</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Row 1 Data 1</td>
             <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-            <td>Row 1 Data 2</td>
         </tr>
         <tr>
             <td>Row 2 Data 1</td>
@@ -79,8 +75,17 @@ body{
 	width: 17%;
 	height: 37vw;
 	position: relative;
-	top: -20px;
 	padding: 10px;
+}
+.profile img{
+  width:75%;
+  margin-left: 25px;
+  border-radius: 200px;}
+.profile div{
+  color: white;
+  font-size:1.1em;
+  margin-left: 40px;
+  margin-top:10px;
 }
 table{
 	font-size: 26px;

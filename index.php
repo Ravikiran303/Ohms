@@ -1,12 +1,6 @@
 <?php
-
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ohms";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+require_once"db.php";
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -48,7 +42,7 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.justify-content-between"></script>
     <link rel="stylesheet" href="assets/css/fontawesome.css">
 
     <script src="assets/js/bootstrap.js"></script>
@@ -59,19 +53,16 @@ mysqli_close($conn);
     <script src="assets/js/popper.min.js"></script>
   </head>
 <body>
-   <body>
-     <img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
-      <nav class="navbar" style="background-color: #669999;height: 20px;">
+    <img style=" display:block;margin:auto;height: 80px;" src = "rgukt.png" /> <br>
+      <nav class="navbar" style="background-color: #669999;height: 40px;">
       <div class="container-fluid">
         <div class="navbar-header">
-          <p class="navbar-brand" style="font-size: 20px;font-family: Bradley Hand ITC;font-weight: bold;color: white;" href="#">Online Hospital Management System</p>
+          <p class="navbar-brand" style="font-size: 20px;font-family: Bradley Hand ITC;font-weight: bold;color: white;padding-top: 20px;"href="#">Online Hospital Management System</p>
         </div>
       </div>
     </nav>
-   </body>
-  <div class="col-md-4 col-md-offset-4" style="margin-top: 3%;">
+<div class="col-md-4 col-md-offset-4" style="position:relative;margin-top: 3%;">
   <form class="p-5" method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-    <img src="">
     <p class="h4 mb-4 text-center" style="border-radius: 5px;height:30px; font-size: 20px;font-family: Bookman Old style; font-weight: bold;">Student Sign In</p>
 
     <input type="text" id="defaultLoginFormEmail" name="stu_id" class="form-control mb-4" placeholder="University ID">
@@ -100,20 +91,15 @@ mysqli_close($conn);
 </form>
 </div>
 
-<footer class="footer" style="position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 30px;
-  background-color: #669999;">
+<footer class="footer" style="position: absolute;bottom: 0;width: 100%;height: 30px;background-color: #669999;">
   <div class="container">
     <p class="con">Contact Us</p>
   </div>
 </footer>
 <style type="text/css">
-body{
-  overflow-y: hidden;
-}
+	body{
+	  overflow-y: hidden;
+	}
   .con{
     font-weight: bold;right: 0;position: absolute;right:100px;top:5px;
   }
